@@ -1,0 +1,160 @@
+#contactme {
+    width: 100%;
+    /* max-width: rem; 1440px */ 
+    margin: 0 auto;   
+    padding: 3rem 10rem;
+    background: linear-gradient(180deg, #ffffff 0%, #ffe3de 100%);
+    box-sizing: border-box;
+  }
+  
+  .containercontact {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 3rem; /* 5rem was too large */
+    background-color: linear-gradient(180deg, #ffffff 0%, #ffe3de 100%);
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  
+  .row1 {
+    margin-bottom: 1rem;
+  }
+  
+  .row1 h1,
+  p {
+    text-align: center;
+  }
+  
+  .row1 h1 {
+    font-weight: 700;
+    font-size: 3rem; /* 48px */
+    color: #333333;
+    line-height: 3rem;
+  }
+  
+  .row1 p {
+    font-weight: 500;
+    font-size: 1rem; /* 20px */
+    color: #858a8f;
+  }
+  form {
+    margin-top: 4rem;
+  }
+  
+  .input-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .nameplace {
+    flex: 1;
+    min-width: 10rem; /* Adjust as necessary */
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 0.75rem; /* 12px */
+    font-size: 1rem; /* 16px */
+    border: 0.5px solid #e4e4e4;
+    box-sizing: border-box;
+    height: 3rem;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 10rem;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem; /* 10px */
+    margin-top: 1rem;
+  }
+  
+  input[type="checkbox"] {
+    transform: scale(1.2);
+  }
+  
+  .submit-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-top: 0.5rem; */
+  }
+  
+  input[type="submit"],
+  .btn-lrg {
+    display: block;
+    padding: 0.75rem 1.25rem; /* 12px 20px */
+    background: #377dff;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.25rem; /* 20px */
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: none;
+  }
+  
+  input[type="submit"]:hover,
+  .btn-lrg:hover {
+    background: #275bb5;
+  }
+  
+
+@media screen and (max-width: 720px) {
+  #contactme {
+    width: 100%;  
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(180deg, #ffffff 0%, #ffe3de 100%);
+    box-sizing: border-box;
+  }
+  
+    .containercontact {
+      margin: 0; 
+      width: 100%; 
+      
+    }
+    .nameplace{
+      width: 100%;
+    }
+    input{width: 80%;}
+  }
+  @media screen and (max-width: 480px) {
+    #contactme {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 1.5rem;
+      background: linear-gradient(180deg, #ffffff 0%, #ffe3de 100%);
+      box-sizing: border-box;
+    }
+  
+    .containercontact {
+      margin: 0;
+      width: 100%;
+    }
+
+    .checkbox-container{
+      justify-content: left;
+    }
+  
+    .nameplace {
+      width: 100%;
+    }
+  
+    input {
+      width: 100%;
+      margin-top: 8px; /* Adjusted margin for spacing on smaller screens */
+    }
+  }
+  

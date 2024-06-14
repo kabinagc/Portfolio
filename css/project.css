@@ -1,0 +1,229 @@
+.Projects {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* vertical alignment*/
+  }
+  
+
+  .Projects .buttonT {
+    width: 300px;
+    height: 60px;
+    background: linear-gradient(90deg, #f25939 54.5%, #ffbe3d 100%);
+    border-radius: 150px 150px 150px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0px 0px 4px 4px rgb(255, 179, 0);
+  }
+  
+  /* project section */
+  .projectcard {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: linear-gradient(to bottom, #ffffff, #ffe3de);
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .projectcard .cardcontent {
+    width: 18em;
+    margin: 10px;
+    background-color: #ffe3de;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 28em;
+  }
+  
+  .projectcard .cardcontent img {
+    width: 100%;
+    height: 14em;
+  }
+  
+  .projectcard .cardcontent .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .projectcard .cardcontent .content h3,
+  .projectcard .cardcontent .content p {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .projectcard .cardcontent .content a {
+    padding: 0.75em 1.5em;
+    background-color: #1b6c87;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .projectcard .cardcontent .content a:hover {
+    background-color: #003a3e;
+  }
+  
+
+  @media screen and (max-width: 480px) {
+    #projects::before {
+        visibility: hidden;
+    }
+
+    .projects_container {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+
+    .projects_header {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .tab {
+        padding: 0.8rem 1.2rem;
+        font-size: 12px;
+    }
+
+    .tab.active,
+    .tab:hover,
+    .tab:focus {
+        font-weight: normal;
+    }
+
+    .projects_content {
+        padding: 10px;
+        margin-top: 8px;
+    }
+
+    .project-list li {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .project-title {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .project-date {
+        font-size: 10px;
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+    #projects::before {
+        visibility: hidden;
+    }
+
+    .projects_container {
+        width: 85%;
+        margin-top: 1.5rem;
+    }
+
+    .projects_header {
+        padding: 10px 0;
+    }
+
+    .tab {
+        padding: 0.9rem 1.3rem;
+        font-size: 14px;
+    }
+
+    .projects_content {
+        padding: 9px;
+        margin-top: 3px;
+    }
+
+    .project-list li {
+        margin-bottom: 15px;
+    }
+
+    .project-title {
+        font-size: 14px;
+    }
+
+    .project-date {
+        font-size: 12px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media screen and (max-width: 992px) {
+    .projects_container {
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    .projects_header {
+        padding: 10px 0;
+    }
+
+    .tab {
+        padding: 1rem 1.4rem;
+        font-size: 16px;
+    }
+
+    .projects_content {
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .project-list li {
+        margin-bottom: 10px;
+    }
+
+    .project-title {
+        font-size: 16px;
+    }
+
+    .project-date {
+        font-size: 14px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and down) */
+@media screen and (max-width: 1200px) {
+    .projects_container {
+        width: 95%;
+        margin-top: 2.5rem;
+    }
+
+    .projects_header {
+        padding: 20px 0;
+    }
+
+    .tab {
+        padding: 1.1rem 1.5rem;
+        font-size: 18px;
+    }
+
+    .projects_content {
+        padding: 20px;
+        margin-top: 12px;
+    }
+
+    .project-list li {
+        margin-bottom: 20px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+
+    .project-date {
+        font-size: 16px;
+    }
+}

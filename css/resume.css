@@ -1,0 +1,182 @@
+#resume{
+    padding-top: 20px;
+   margin-bottom:2rem;
+   position: relative;
+   overflow: hidden; 
+}
+#resume::before{
+ background: url(../images/line.png);
+ background-size: cover;
+ height: 150px;
+ width: 90%;
+ content: "";
+ position: absolute;
+ z-index: 2;
+ margin-inline-start: 3em;
+ display: flex;
+   
+} 
+.resume_container {
+ width: 80%;
+ margin: 0 auto;
+ margin-top: 2rem;
+}
+
+.resume_header {
+ display: flex;
+ justify-content: space-around;
+ background-color: #FFE3DE;
+ padding: 20px 0;
+ border: 1px solid #fdb0a2;
+
+}
+
+.tab {
+ cursor: pointer;
+ padding: 1rem 1.5rem;
+ /* border: 1px solid #ccc; */
+ background-color: #FFE3DE;
+ transition: background-color 0.3s ease;
+ overflow: hidden;
+ color:#1B6C87;
+ 
+}
+
+.tab a {
+ text-decoration: none;
+ color: inherit;
+ display: block;
+}
+
+.tab:hover,
+.tab:focus {
+   background-color: #fdb0a2;
+   font-weight: 550;
+   outline: none;
+}
+
+.tab.active {
+   background-color: #fdb0a2;
+   font-weight: 550;
+}
+
+.resume_content {
+ border: 1px solid #fdb0a2;
+ padding: 20px;
+ background-color: #FFE3DE;
+ margin-top: 10px;
+}
+
+.content-section {
+ display: none;
+}
+
+.content-section.active {
+ display: block;
+}
+
+.experience-list {
+ list-style: none;
+ padding: 0;
+}
+
+.experience-list li {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 10px;
+}
+
+.role {
+ font-weight: bold;
+}
+
+.date {
+ color: #a0462a;
+ font-weight: 520;
+}
+
+@media screen and (max-width: 480px) {
+  #resume::before {
+      visibility: hidden;
+  }
+
+  .resume_container {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 1rem;
+  }
+
+  .resume_header {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .tab {
+      padding: 0.8rem 1.2rem;
+      font-size: 12px;
+  }
+
+  .tab.active,
+  .tab:hover,
+  .tab:focus {
+      font-weight: normal;
+  }
+
+  .resume_content {
+      padding: 10px;
+      margin-top: 8px;
+  }
+
+  .experience-list li {
+      flex-direction: column;
+      margin-bottom: 20px;
+  }
+
+  .role {
+      font-size: 12px;
+      margin-bottom: 4px;
+  }
+
+  .date {
+      font-size: 10px;
+  }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media screen and (max-width: 768px) {
+  #resume::before {
+    visibility: hidden;
+  }
+
+  .resume_container {
+      width: 85%;
+      margin-top: 1.5rem;
+  }
+
+  .resume_header {
+      padding: 10px 0;
+  }
+
+  .tab {
+      padding: 0.9rem 1.3rem;
+      font-size: 14px;
+  }
+
+  .resume_content {
+      padding: 9px;
+      margin-top: 3px;
+  }
+
+  .experience-list li {
+      margin-bottom: 15px;
+  }
+
+  .role {
+      font-size: 14px;
+  }
+
+  .date {
+      font-size: 12px;
+  }
+}

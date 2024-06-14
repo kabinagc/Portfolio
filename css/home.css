@@ -1,0 +1,211 @@
+.home {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 5em;
+  }
+   .home::before{
+  
+    background: url(../images/line.png);
+    background-size: cover;
+    height: 150px;
+    width: 90%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin-inline-start: 5em;
+    display: flex;
+  } 
+   
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.875rem; 
+   
+  }
+  
+  /* Apply styles to the row within the container */
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; 
+  }
+  .home-info {
+    flex: 1;
+    line-height: 3ch;
+    margin-top: 5ch;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .home-info p{
+    text-align: left;
+    color:#848A8A;
+    font-size:medium;
+  }
+  /* Apply styles to the hello heading */
+  .hello {
+    font-size: 3em; /* Adjust font size as needed */
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px; /* Add bottom margin as needed */
+  }
+  
+  /* Apply styles to the name span */
+  .name {
+    color: #F25939;
+  }
+  
+  
+  .CV {
+    background-color: #1B6C87;
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 19.5rem;
+    height: 3.4375rem;
+    box-shadow: 0 5px 4px rgba(2, 2, 2, 0.2);
+
+  }
+  
+
+  .home-img {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;
+    position: relative;
+    
+  }
+  
+  
+  .home-img img {
+    width: 337px;
+    height: 473px;
+    z-index: 1;
+    position: relative;
+  }
+  .home-img::before{
+  
+    background: url(../images/Component_9-removebg-preview.png);
+    height: 445px;
+    background-size: cover;
+    width: 281.59px;
+    content: "";
+    position: absolute;
+    z-index: 2;
+    border-radius: 11%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); 
+  }
+    
+  @media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-img {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .home-img img {
+        visibility: hidden;
+    }
+
+    .home-img::before {
+        background: url(../images/kabina.jpg);
+        background-size: cover;
+        box-shadow: none;
+        
+    }
+
+    .home-info {
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+    }
+
+    .home-info p {
+        text-align: center;
+    }
+
+    .hello {
+        font-size: 2em;
+    }
+
+    .CV {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .home::before {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-img {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .home-img::before {
+        background: url(../images/kabina.jpg);
+        background-size: cover;
+        box-shadow: none;
+        
+       
+    }
+
+    .home-info {
+        text-align: center;
+        margin-top: 0;
+        padding: 10px;
+    }
+
+    .home-info p {
+        text-align: center;
+    }
+
+    .hello {
+        font-size: 1.5em;
+    }
+
+    .CV {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .home::before {
+        display: block; /* Show the background line on smaller screens */
+        background-size: contain;
+        height: 80px; /* Adjust height as needed */
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-inline-start: 0;
+    }
+}
+  

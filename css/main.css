@@ -1,0 +1,19 @@
+/* @import url(style1.css); */
+@import url(header.css);
+@import url(home.css);
+@import url(resume.css);
+@import url(project.css);
+@import url(footer.css);
+@import url(blog.css);
+@import url(about.css);
+@import url(contact.css);
+/* @import url(mobile.css); */
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+  }
+  
+  
